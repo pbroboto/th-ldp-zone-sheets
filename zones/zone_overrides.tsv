@@ -1,0 +1,90 @@
+Amnat Charoen	TH.AC	TM	+proj=tmerc +lat_0=15.88333333 +lon_0=104.75000000 +k_0=1.000016 +x_0=56000 +y_0=322000 +ellps=WGS84 +units=m +no_defs +type=crs
+Ang Thong	TH.AT	TM	+proj=tmerc +lat_0=14.61666667 +lon_0=100.35000000 +k_0=0.999997 +x_0=32000 +y_0=77000 +ellps=WGS84 +units=m +no_defs +type=crs
+Bueng Kan	TH.BK	LCC	+proj=lcc +lat_1=18.15000000 +lat_0=18.15000000 +lon_0=103.71666667 +k_0=1.000022 +x_0=55000 +y_0=330000 +ellps=WGS84 +units=m +no_defs +type=crs
+Buri Ram	TH.BR	TM	+proj=tmerc +lat_0=14.81666667 +lon_0=102.96666667 +k_0=1.000012 +x_0=325000 +y_0=759000 +ellps=WGS84 +units=m +no_defs +type=crs
+Chon Buri	TH.CB	TM	+proj=tmerc +lat_0=13.20000000 +lon_0=101.20000000 +k_0=0.999997 +x_0=47000 +y_0=336000 +ellps=WGS84 +units=m +no_defs +type=crs
+Chachoengsao	TH.CC	LCC	+proj=lcc +lat_1=13.60000000 +lat_0=13.60000000 +lon_0=101.43333333 +k_0=0.999996 +x_0=327000 +y_0=778000 +ellps=WGS84 +units=m +no_defs +type=crs
+Chiang Mai Central	TH.CM_C	LCC	+proj=lcc +lat_1=18.70000000 +lat_0=18.70000000 +lon_0=98.65000000 +k_0=1.000043 +x_0=316000 +y_0=781000 +ellps=WGS84 +units=m +no_defs +type=crs
+Chiang Mai North	TH.CM_N	TM	+proj=tmerc +lat_0=19.51666667 +lon_0=99.01666667 +k_0=1.000063 +x_0=325000 +y_0=769000 +ellps=WGS84 +units=m +no_defs +type=crs
+Chiang Mai South	TH.CM_S	TM	+proj=tmerc +lat_0=17.85000000 +lon_0=98.43333333 +k_0=1.000139 +x_0=54000 +y_0=333000 +ellps=WGS84 +units=m +no_defs +type=crs
+Chai Nat	TH.CN	LCC	+proj=lcc +lat_1=15.13333333 +lat_0=15.13333333 +lon_0=100.03333333 +k_0=0.999999 +x_0=55000 +y_0=322000 +ellps=WGS84 +units=m +no_defs +type=crs
+Chumphon	TH.CP	TM	+proj=tmerc +lat_0=10.35000000 +lon_0=99.06666667 +k_0=1.000003 +x_0=55000 +y_0=329000 +ellps=WGS84 +units=m +no_defs +type=crs
+Chiang Rai	TH.CR	TM	+proj=tmerc +lat_0=19.85000000 +lon_0=99.86666667 +k_0=1.000051 +x_0=320000 +y_0=788000 +ellps=WGS84 +units=m +no_defs +type=crs
+Chanthaburi	TH.CT	TM	+proj=tmerc +lat_0=12.88333333 +lon_0=102.13333333 +k_0=1.000006 +x_0=57000 +y_0=332000 +ellps=WGS84 +units=m +no_defs +type=crs
+Chaiyaphum	TH.CY	TM	+proj=tmerc +lat_0=16.03333333 +lon_0=101.81666667 +k_0=1.000017 +x_0=318000 +y_0=776000 +ellps=WGS84 +units=m +no_defs +type=crs
+GreaterBKK	TH.GBKK	TM	+proj=tmerc +lat_0=13.75000000 +lon_0=100.60000000 +k_0=0.999989 +x_0=53000 +y_0=318000 +ellps=WGS84 +units=m +no_defs +type=crs
+Khon Kaen	TH.KK	TM	+proj=tmerc +lat_0=16.40000000 +lon_0=102.58333333 +k_0=1.000010 +x_0=337000 +y_0=779000 +ellps=WGS84 +units=m +no_defs +type=crs
+Kalasin	TH.KL	LCC	+proj=lcc +lat_1=16.63333333 +lat_0=16.63333333 +lon_0=103.61666667 +k_0=1.000010 +x_0=319000 +y_0=774000 +ellps=WGS84 +units=m +no_defs +type=crs
+Kanchanaburi North	TH.KN_N	TM	+proj=tmerc +lat_0=14.81666667 +lon_0=98.76666667 +k_0=1.000013 +x_0=325000 +y_0=766000 +ellps=WGS84 +units=m +no_defs +type=crs
+Kanchanaburi South	TH.KN_S	TM	+proj=tmerc +lat_0=14.23333333 +lon_0=99.45000000 +k_0=0.999995 +x_0=333000 +y_0=769000 +ellps=WGS84 +units=m +no_defs +type=crs
+Kamphaeng Phet	TH.KP	TM	+proj=tmerc +lat_0=16.33333333 +lon_0=99.53333333 +k_0=0.999994 +x_0=326000 +y_0=770000 +ellps=WGS84 +units=m +no_defs +type=crs
+Krabi	TH.KR	TM	+proj=tmerc +lat_0=8.18333333 +lon_0=99.01666667 +k_0=1.000000 +x_0=55000 +y_0=327000 +ellps=WGS84 +units=m +no_defs +type=crs
+Lop Buri	TH.LB	TM	+proj=tmerc +lat_0=15.10000000 +lon_0=100.90000000 +k_0=0.999990 +x_0=323000 +y_0=773000 +ellps=WGS84 +units=m +no_defs +type=crs
+Loei	TH.LE	TM	+proj=tmerc +lat_0=17.40000000 +lon_0=101.63333333 +k_0=1.000033 +x_0=340000 +y_0=766000 +ellps=WGS84 +units=m +no_defs +type=crs
+Lampang North	TH.LG_N	TM	+proj=tmerc +lat_0=18.85000000 +lon_0=99.70000000 +k_0=1.000045 +x_0=52000 +y_0=314000 +ellps=WGS84 +units=m +no_defs +type=crs
+Lampang South	TH.LG_S	TM	+proj=tmerc +lat_0=18.03333333 +lon_0=99.40000000 +k_0=1.000027 +x_0=318000 +y_0=785000 +ellps=WGS84 +units=m +no_defs +type=crs
+Lamphun	TH.LN	TM	+proj=tmerc +lat_0=18.11666667 +lon_0=98.95000000 +k_0=1.000052 +x_0=50000 +y_0=331000 +ellps=WGS84 +units=m +no_defs +type=crs
+Mukdahan North	TH.MD_N	TM	+proj=tmerc +lat_0=16.68333333 +lon_0=104.35000000 +k_0=1.000030 +x_0=53000 +y_0=333000 +ellps=WGS84 +units=m +no_defs +type=crs
+Mukdahan South	TH.MD_S	TM	+proj=tmerc +lat_0=16.46666667 +lon_0=104.66666667 +k_0=1.000025 +x_0=52000 +y_0=321000 +ellps=WGS84 +units=m +no_defs +type=crs
+Mae Hong Son Central	TH.MH_C	TM	+proj=tmerc +lat_0=18.93333333 +lon_0=97.96666667 +k_0=1.000042 +x_0=55000 +y_0=322000 +ellps=WGS84 +units=m +no_defs +type=crs	270.22	310.00	20
+Mae Hong Son North	TH.MH_N	TM	+proj=tmerc +lat_0=19.40000000 +lon_0=98.35000000 +k_0=1.000088 +x_0=56000 +y_0=323000 +ellps=WGS84 +units=m +no_defs +type=crs	560.80	600.00	20
+Mae Hong Son South	TH.MH_S	TM	+proj=tmerc +lat_0=18.15000000 +lon_0=97.85000000 +k_0=1.000036 +x_0=58000 +y_0=329000 +ellps=WGS84 +units=m +no_defs +type=crs	229.88	270.00	20
+Maha Sarakham	TH.MS	TM	+proj=tmerc +lat_0=16.00000000 +lon_0=103.16666667 +k_0=1.000014 +x_0=54000 +y_0=322000 +ellps=WGS84 +units=m +no_defs +type=crs
+Nan	TH.NA	TM	+proj=tmerc +lat_0=18.85000000 +lon_0=100.83333333 +k_0=1.000042 +x_0=323000 +y_0=778000 +ellps=WGS84 +units=m +no_defs +type=crs
+Nong Bua Lam Phu	TH.NB	TM	+proj=tmerc +lat_0=17.18333333 +lon_0=102.30000000 +k_0=1.000030 +x_0=51000 +y_0=321000 +ellps=WGS84 +units=m +no_defs +type=crs
+Nakhon Phanom	TH.NF	TM	+proj=tmerc +lat_0=17.38333333 +lon_0=104.43333333 +k_0=1.000012 +x_0=59000 +y_0=323000 +ellps=WGS84 +units=m +no_defs +type=crs
+Nong Khai	TH.NK	LCC	+proj=lcc +lat_1=17.93333333 +lat_0=17.93333333 +lon_0=102.83333333 +k_0=1.000019 +x_0=335000 +y_0=774000 +ellps=WGS84 +units=m +no_defs +type=crs
+Nakhon Nayok	TH.NN	TM	+proj=tmerc +lat_0=14.21666667 +lon_0=101.16666667 +k_0=1.000003 +x_0=51000 +y_0=323000 +ellps=WGS84 +units=m +no_defs +type=crs
+Nakhon Pathom	TH.NP	TM	+proj=tmerc +lat_0=13.93333333 +lon_0=100.10000000 +k_0=0.999993 +x_0=57000 +y_0=326000 +ellps=WGS84 +units=m +no_defs +type=crs
+Nakhon Ratchasima North	TH.NR_N	TM	+proj=tmerc +lat_0=15.33333333 +lon_0=102.50000000 +k_0=1.000013 +x_0=323000 +y_0=778000 +ellps=WGS84 +units=m +no_defs +type=crs
+Nakhon Ratchasima South	TH.NR_S	TM	+proj=tmerc +lat_0=14.76666667 +lon_0=101.91666667 +k_0=1.000019 +x_0=323000 +y_0=772000 +ellps=WGS84 +units=m +no_defs +type=crs
+Nakhon Sawan	TH.NS	LCC	+proj=lcc +lat_1=15.68333333 +lat_0=15.68333333 +lon_0=100.15000000 +k_0=0.999998 +x_0=344000 +y_0=781000 +ellps=WGS84 +units=m +no_defs +type=crs
+Nakhon Si Thammarat	TH.NT	TM	+proj=tmerc +lat_0=8.38333333 +lon_0=99.78333333 +k_0=0.999987 +x_0=325000 +y_0=754000 +ellps=WGS84 +units=m +no_defs +type=crs
+Narathiwat	TH.NW	TM	+proj=tmerc +lat_0=6.18333333 +lon_0=101.71666667 +k_0=0.999999 +x_0=53000 +y_0=325000 +ellps=WGS84 +units=m +no_defs +type=crs
+Phra Nakhon Si Ayutthaya	TH.PA	TM	+proj=tmerc +lat_0=14.35000000 +lon_0=100.53333333 +k_0=0.999989 +x_0=55000 +y_0=320000 +ellps=WGS84 +units=m +no_defs +type=crs
+Prachin Buri	TH.PB	TM	+proj=tmerc +lat_0=14.05000000 +lon_0=101.65000000 +k_0=0.999988 +x_0=328000 +y_0=778000 +ellps=WGS84 +units=m +no_defs +type=crs
+Phichit	TH.PC	TM	+proj=tmerc +lat_0=16.25000000 +lon_0=100.35000000 +k_0=0.999992 +x_0=52000 +y_0=322000 +ellps=WGS84 +units=m +no_defs +type=crs
+Phetchaburi	TH.PE	LCC	+proj=lcc +lat_1=12.95000000 +lat_0=12.95000000 +lon_0=99.61666667 +k_0=0.999992 +x_0=327000 +y_0=776000 +ellps=WGS84 +units=m +no_defs +type=crs
+Phangnga	TH.PG	TM	+proj=tmerc +lat_0=8.66666667 +lon_0=98.41666667 +k_0=1.000004 +x_0=50000 +y_0=317000 +ellps=WGS84 +units=m +no_defs +type=crs
+Phetchabun	TH.PH	TM	+proj=tmerc +lat_0=16.26666667 +lon_0=101.15000000 +k_0=1.000011 +x_0=318000 +y_0=780000 +ellps=WGS84 +units=m +no_defs +type=crs
+Pattani	TH.PI	LCC	+proj=lcc +lat_1=6.73333333 +lat_0=6.73333333 +lon_0=101.35000000 +k_0=0.999998 +x_0=53000 +y_0=323000 +ellps=WGS84 +units=m +no_defs +type=crs
+Prachuap Khiri Khan	TH.PK	TM	+proj=tmerc +lat_0=11.95000000 +lon_0=99.63333333 +k_0=0.999998 +x_0=60000 +y_0=341000 +ellps=WGS84 +units=m +no_defs +type=crs
+Phatthalung	TH.PL	TM	+proj=tmerc +lat_0=7.51666667 +lon_0=100.06666667 +k_0=0.999997 +x_0=53000 +y_0=327000 +ellps=WGS84 +units=m +no_defs +type=crs
+Phrae	TH.PR	TM	+proj=tmerc +lat_0=18.20000000 +lon_0=100.06666667 +k_0=1.000012 +x_0=336000 +y_0=767000 +ellps=WGS84 +units=m +no_defs +type=crs
+Phitsanulok East	TH.PS_E	TM	+proj=tmerc +lat_0=17.21666667 +lon_0=100.78333333 +k_0=1.000033 +x_0=59000 +y_0=320000 +ellps=WGS84 +units=m +no_defs +type=crs
+Phitsanulok West	TH.PS_W	TM	+proj=tmerc +lat_0=16.83333333 +lon_0=100.40000000 +k_0=0.999991 +x_0=326000 +y_0=773000 +ellps=WGS84 +units=m +no_defs +type=crs
+Pathum Thani	TH.PT	LCC	+proj=lcc +lat_1=14.06666667 +lat_0=14.06666667 +lon_0=100.68333333 +k_0=0.999992 +x_0=59000 +y_0=322000 +ellps=WGS84 +units=m +no_defs +type=crs
+Phuket	TH.PU	TM	+proj=tmerc +lat_0=7.96666667 +lon_0=98.35000000 +k_0=1.000005 +x_0=32000 +y_0=76000 +ellps=WGS84 +units=m +no_defs +type=crs
+Phayao	TH.PY	TM	+proj=tmerc +lat_0=19.23333333 +lon_0=100.18333333 +k_0=1.000053 +x_0=327000 +y_0=771000 +ellps=WGS84 +units=m +no_defs +type=crs
+Roi Et	TH.RE	TM	+proj=tmerc +lat_0=15.91666667 +lon_0=103.81666667 +k_0=1.000005 +x_0=325000 +y_0=773000 +ellps=WGS84 +units=m +no_defs +type=crs
+Ranong	TH.RN	TM	+proj=tmerc +lat_0=9.96666667 +lon_0=98.70000000 +k_0=1.000003 +x_0=57000 +y_0=316000 +ellps=WGS84 +units=m +no_defs +type=crs
+Ratchaburi	TH.RT	TM	+proj=tmerc +lat_0=13.53333333 +lon_0=99.58333333 +k_0=0.999992 +x_0=51000 +y_0=323000 +ellps=WGS84 +units=m +no_defs +type=crs
+Rayong	TH.RY	LCC	+proj=lcc +lat_1=12.85000000 +lat_0=12.85000000 +lon_0=101.43333333 +k_0=1.000002 +x_0=58000 +y_0=322000 +ellps=WGS84 +units=m +no_defs +type=crs
+Satun	TH.SA	TM	+proj=tmerc +lat_0=6.85000000 +lon_0=99.96666667 +k_0=1.000004 +x_0=57000 +y_0=333000 +ellps=WGS84 +units=m +no_defs +type=crs
+Sing Buri	TH.SB	TM	+proj=tmerc +lat_0=14.91666667 +lon_0=100.35000000 +k_0=0.999995 +x_0=34000 +y_0=78000 +ellps=WGS84 +units=m +no_defs +type=crs
+Songkhla	TH.SG	TM	+proj=tmerc +lat_0=6.93333333 +lon_0=100.55000000 +k_0=0.999991 +x_0=321000 +y_0=755000 +ellps=WGS84 +units=m +no_defs +type=crs
+Suphan Buri	TH.SH	TM	+proj=tmerc +lat_0=14.60000000 +lon_0=99.90000000 +k_0=0.999996 +x_0=337000 +y_0=778000 +ellps=WGS84 +units=m +no_defs +type=crs
+Si Sa Ket	TH.SI	TM	+proj=tmerc +lat_0=14.85000000 +lon_0=104.36666667 +k_0=1.000008 +x_0=322000 +y_0=764000 +ellps=WGS84 +units=m +no_defs +type=crs
+Sa Kaeo	TH.SK	TM	+proj=tmerc +lat_0=13.78333333 +lon_0=102.31666667 +k_0=0.999999 +x_0=316000 +y_0=782000 +ellps=WGS84 +units=m +no_defs +type=crs
+Samut Songkhram	TH.SM	TM	+proj=tmerc +lat_0=13.40000000 +lon_0=99.95000000 +k_0=0.999995 +x_0=31000 +y_0=80000 +ellps=WGS84 +units=m +no_defs +type=crs
+Sakon Nakhon	TH.SN	TM	+proj=tmerc +lat_0=17.38333333 +lon_0=103.83333333 +k_0=1.000008 +x_0=324000 +y_0=770000 +ellps=WGS84 +units=m +no_defs +type=crs
+Sukhothai	TH.SO	TM	+proj=tmerc +lat_0=17.25000000 +lon_0=99.71666667 +k_0=0.999999 +x_0=56000 +y_0=325000 +ellps=WGS84 +units=m +no_defs +type=crs
+Saraburi	TH.SR	TM	+proj=tmerc +lat_0=14.63333333 +lon_0=101.01666667 +k_0=0.999997 +x_0=55000 +y_0=324000 +ellps=WGS84 +units=m +no_defs +type=crs
+Samut Sakhon	TH.SS	LCC	+proj=lcc +lat_1=13.56666667 +lat_0=13.56666667 +lon_0=100.21666667 +k_0=0.999995 +x_0=32000 +y_0=76000 +ellps=WGS84 +units=m +no_defs +type=crs
+Surat Thani North	TH.ST_N	TM	+proj=tmerc +lat_0=9.20000000 +lon_0=98.85000000 +k_0=0.999996 +x_0=53000 +y_0=327000 +ellps=WGS84 +units=m +no_defs +type=crs
+Surat Thani South	TH.ST_S	TM	+proj=tmerc +lat_0=8.85000000 +lon_0=99.28333333 +k_0=0.999992 +x_0=323000 +y_0=779000 +ellps=WGS84 +units=m +no_defs +type=crs
+Surin	TH.SU	TM	+proj=tmerc +lat_0=14.88333333 +lon_0=103.66666667 +k_0=1.000010 +x_0=333000 +y_0=772000 +ellps=WGS84 +units=m +no_defs +type=crs
+Trang	TH.TG	TM	+proj=tmerc +lat_0=7.53333333 +lon_0=99.61666667 +k_0=0.999999 +x_0=55000 +y_0=324000 +ellps=WGS84 +units=m +no_defs +type=crs
+Tak Central	TH.TK_C	TM	+proj=tmerc +lat_0=17.01666667 +lon_0=98.51666667 +k_0=1.000032 +x_0=338000 +y_0=769000 +ellps=WGS84 +units=m +no_defs +type=crs
+Tak North	TH.TK_N	TM	+proj=tmerc +lat_0=17.11666667 +lon_0=99.00000000 +k_0=1.000010 +x_0=328000 +y_0=771000 +ellps=WGS84 +units=m +no_defs +type=crs
+Tak South	TH.TK_S	TM	+proj=tmerc +lat_0=15.80000000 +lon_0=98.88333333 +k_0=1.000084 +x_0=59000 +y_0=327000 +ellps=WGS84 +units=m +no_defs +type=crs
+Trat	TH.TT	TM	+proj=tmerc +lat_0=12.36666667 +lon_0=102.53333333 +k_0=0.999997 +x_0=49000 +y_0=343000 +ellps=WGS84 +units=m +no_defs +type=crs
+Uttaradit Central	TH.UD_C	LCC	+proj=lcc +lat_1=17.83333333 +lat_0=17.83333333 +lon_0=100.65000000 +k_0=1.000023 +x_0=62000 +y_0=325000 +ellps=WGS84 +units=m +no_defs +type=crs
+Uttaradit East	TH.UD_E	TM	+proj=tmerc +lat_0=18.15000000 +lon_0=101.06666667 +k_0=1.000070 +x_0=34000 +y_0=326000 +ellps=WGS84 +units=m +no_defs +type=crs
+Uttaradit West	TH.UD_W	TM	+proj=tmerc +lat_0=17.51666667 +lon_0=100.18333333 +k_0=1.000013 +x_0=45000 +y_0=326000 +ellps=WGS84 +units=m +no_defs +type=crs
+Udon Thani	TH.UN	LCC	+proj=lcc +lat_1=17.41666667 +lat_0=17.41666667 +lon_0=102.86666667 +k_0=1.000009 +x_0=327000 +y_0=772000 +ellps=WGS84 +units=m +no_defs +type=crs
+Ubon Ratchathani North	TH.UR_N	TM	+proj=tmerc +lat_0=15.66666667 +lon_0=105.25000000 +k_0=1.000012 +x_0=54000 +y_0=324000 +ellps=WGS84 +units=m +no_defs +type=crs
+Ubon Ratchathani South	TH.UR_S	TM	+proj=tmerc +lat_0=14.98333333 +lon_0=105.05000000 +k_0=1.000008 +x_0=331000 +y_0=779000 +ellps=WGS84 +units=m +no_defs +type=crs
+Uthai Thani	TH.UT	LCC	+proj=lcc +lat_1=15.35000000 +lat_0=15.35000000 +lon_0=99.48333333 +k_0=1.000010 +x_0=319000 +y_0=773000 +ellps=WGS84 +units=m +no_defs +type=crs
+Yala	TH.YL	TM	+proj=tmerc +lat_0=6.20000000 +lon_0=101.23333333 +k_0=1.000008 +x_0=56000 +y_0=331000 +ellps=WGS84 +units=m +no_defs +type=crs
+Yasothon	TH.YS	TM	+proj=tmerc +lat_0=15.90000000 +lon_0=104.35000000 +k_0=1.000013 +x_0=48000 +y_0=334000 +ellps=WGS84 +units=m +no_defs +type=crs

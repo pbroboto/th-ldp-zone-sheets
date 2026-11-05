@@ -1,0 +1,22 @@
+# Whitelist: everything is ignored unless listed here. The inputs (DEM, geoid,
+# boundaries, OSM cache) and the per-zone working folders are large, third-party
+# and re-creatable, so they never go in. PNG previews are not published.
+*
+!.gitignore
+!README.md
+!LICENSE
+
+!zones/
+zones/*
+!zones/zone_pipeline.py
+!zones/run_atlas.py
+!zones/run_nov.py
+!zones/run_layouts.py
+!zones/rebuild_layout_only.py
+!zones/make_overrides_nov.py
+!zones/compare_csv.py
+!zones/zone_overrides.tsv
+
+!output/
+output/*
+!output/*_TH-LDP.pdf
