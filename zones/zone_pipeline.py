@@ -27,11 +27,11 @@ ZONES_DIR = ROOT + r"\zones"
 OUTPUT_DIR = ROOT + r"\output"
 QGIS_PREFIX = QGIS_HOME + r"\apps\qgis"
 
-PAGE_W, PAGE_H = 215.9, 279.4  # Letter portrait, mm
+PAGE_W, PAGE_H = 210.0, 297.0  # A4 portrait, mm (the formal size in Thailand)
 MAP_X, MAP_Y = 10, 31
 MAP_W = PAGE_W - 20
 MAP_H_MAX = 150  # raster is built to this aspect
-MAP_H_VIEW = 135  # tallest map box on the page; the raster is centre-cropped to fit
+MAP_H_VIEW = 150  # tallest map box on the page; the raster is centre-cropped to fit
 TARGET_ASPECT = MAP_W / MAP_H_MAX
 RES = 60.0  # dem/raster resolution, metres
 
@@ -924,9 +924,9 @@ def build_layout(zone, zdir, render_path):
         add_rotated_label(sp_value_str, sp_x_mm, sp_y_mm + (7 / 2 + sp_gap), 45, 7, size=11, rotation=0)
 
     TXT_Y = MAP_Y + MAP_H + 6
-    COL1_X, COL1_W = 10, 95
-    COL2_X, COL2_W = 112, 52
-    COL3_X, COL3_W = 170, PAGE_W - 10 - 170
+    COL1_X, COL1_W = 10, 90
+    COL2_X, COL2_W = 104, 52
+    COL3_X, COL3_W = 162, PAGE_W - 10 - 162
 
     LOC_W, LOC_H = COL3_W, 42
     LOC_Y = TXT_Y + 5
