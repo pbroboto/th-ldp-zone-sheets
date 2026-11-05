@@ -115,7 +115,7 @@ stored in this repository; download it yourself.
 | --- | --- | --- | --- |
 | **FABDEM** | elevations, hillshade, elevation factor | University of Bristol, <https://data.bris.ac.uk/data/dataset/s5hqmjcdj8yo2ibzi9b4ew3sn> (tiles; mosaic to `TH_FABDEM.tif`) | CC BY-NC-SA 4.0 |
 | **GADM 4.1** | province outlines | <https://gadm.org/download_country.html> (Thailand, GeoPackage, `gadm41_THA.gpkg`) | free for non-commercial use; no redistribution |
-| **TGM2017** | geoid undulation | published by the Royal Thai Survey Department; convert the grid to `tgm2017.gtx` | owner's terms |
+| **TGM2017** | geoid undulation | <https://www.priabroy.name/download> (the author's weblog, where TGM2017 is available to everyone in Thailand); the pipeline reads it as `tgm2017.gtx` | owner's terms (Royal Thai Survey Department) |
 | **OpenStreetMap** | roads, provincial capitals, Amphur seats, airports, protected areas | fetched by the script from the Overpass API at run time (`overpass-api.de`) | ODbL, © OpenStreetMap contributors |
 
 The first three can be downloaded from the internet, as listed. **OpenStreetMap
