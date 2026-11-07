@@ -566,7 +566,7 @@ def build_layout(zone, zdir, render_path):
     from qgis.core import (
         Qgis, QgsApplication, QgsProject, QgsRasterLayer, QgsVectorLayer,
         QgsCoordinateReferenceSystem, QgsPrintLayout, QgsLayoutItemMap,
-        QgsLayoutItemLabel, QgsLayoutItemShape, QgsLayoutItemScaleBar,
+        QgsLayoutItemLabel, QgsLayoutItemShape, QgsLayoutItemScaleBar, QgsLayoutItemPicture,
         QgsLayoutPoint, QgsLayoutSize, QgsUnitTypes, QgsLayoutExporter,
         QgsSingleSymbolRenderer, QgsLineSymbol, QgsFillSymbol, QgsSimpleFillSymbolLayer,
         QgsPalLayerSettings, QgsTextFormat, QgsVectorLayerSimpleLabeling,
@@ -974,11 +974,11 @@ def build_layout(zone, zdir, render_path):
         dy = 9
     add_label(params_text, COL1_X, TXT_Y + 23, COL1_W, 36 + dy, size=8.5)
     add_label(
-        f"Projected map grid is shown in units of\ninternational metres ({ldp_interval/1000:g} km grid interval)",
-        COL1_X, TXT_Y + 60 + dy, COL1_W, 12, size=8
+        f"Projected map grid is shown in unit meters ({ldp_interval/1000:g} km interval)",
+        COL1_X, TXT_Y + 57 + dy, COL1_W, 6, size=8
     )
     add_label(
-        "Prepared for the TH-LDP Committee\nriabroy@gmail.com\n\n"
+        "Prepared for the TH-LDP Committee\nriabroy@gmail.com\nLicense: CC BY-NC-SA 4.0\n\n"
         "Base data: FABDEM (elevation),\nTGM2017 (geoid), GADM 4.1\n(admin.), OpenStreetMap\n(roads, places, AOI)\n\n"
         "Map created 2026-10-20",
         COL3_X, LOC_Y + LOC_H + 4, COL3_W, 32, size=6.5
@@ -993,9 +993,9 @@ def build_layout(zone, zdir, render_path):
         ("±(10–20) ppm", (173, 221, 142)), ("±10 ppm", (65, 171, 93)),
         ("> +50 ppm", (203, 24, 29)),
     ]
-    sw = 6
+    sw, sw_gap = 5, 0.9
     for i, (label, col) in enumerate(bins):
-        y = LEG_Y + i * (sw + 1.2)
+        y = LEG_Y + i * (sw + sw_gap)
         shp = QgsLayoutItemShape(layout)
         shp.setShapeType(QgsLayoutItemShape.Rectangle)
         shp.attemptMove(QgsLayoutPoint(LEG_X, y, QgsUnitTypes.LayoutMillimeters))
@@ -1005,31 +1005,54 @@ def build_layout(zone, zdir, render_path):
         layout.addLayoutItem(shp)
         add_label(label, LEG_X + sw + 2, y - 0.5, 45, sw, size=7.5)
 
-    zy = LEG_Y + len(bins) * (sw + 1.2) + 2
+    zy = LEG_Y + len(bins) * (sw + sw_gap) + 1.5
     add_label("- - -  Zero distortion line", LEG_X, zy, 60, 5, size=7.5)
-    add_label("─·─·  Central meridian", LEG_X, zy + 5, 60, 5, size=7.5, bold=True)
-    add_label(cm_value_str, LEG_X + 3, zy + 9.5, 60, 5, size=7.5)
-    zy2 = zy + 14.5
-    if sp_lyr is not None:
-        add_label("— —  " + sp_title.capitalize(), LEG_X, zy2, 60, 5, size=7.5, bold=True)
-        add_label(sp_value_str, LEG_X + 3, zy2 + 4.5, 60, 5, size=7.5)
-        zy2 += 9
+    # central meridian / origin latitude need no legend entry: they are annotated on the map
+    zy2 = zy + 4.2
     add_label("—  Motorway / trunk / primary road", LEG_X, zy2, 70, 5, size=7.5)
-    add_label("●  Town    ▲  Airport    ▒▒  Protected area", LEG_X, zy2 + 5, 75, 5, size=7.5)
+    add_label("●  Town    ▲  Airport    ▒▒  Protected area", LEG_X, zy2 + 4.2, 75, 5, size=7.5)
 
-    sb = QgsLayoutItemScaleBar(layout)
-    sb.setStyle("Single Box")
-    sb.setLinkedMap(main_map)
-    sb.setUnits(QgsUnitTypes.DistanceKilometers)
-    sb.setNumberOfSegments(4)
-    sb.setNumberOfSegmentsLeft(0)
-    sb.setUnitsPerSegment(5)
-    sb.setUnitLabel("km")
-    sb.setFont(QFont("Arial", 7))
-    sb.update()
-    sb.attemptMove(QgsLayoutPoint(10, TXT_Y + 65 + dy, QgsUnitTypes.LayoutMillimeters))
-    layout.addLayoutItem(sb)
-    add_label("Grid North ↑", 10, TXT_Y + 75 + dy, 40, 6, size=8, bold=True)
+    # Zebra scale bar, as in the OCRS handbook: two rows of alternating black/white cells, five
+    # segments, the first one split into five small cells. Drawn from rectangles because the
+    # built-in bar cannot subdivide its first segment.
+    # Longest of 100/50/20/10 km that fits under the legend, left of the location map
+    # (zones narrower than ~135 km cannot show 100 km).
+    bar_km = next((k for k in (100, 50, 20, 10) if k * 1000 / ext.width() * MAP_W <= COL3_X - COL1_X - 12), 5)
+    bar_mm = bar_km * 1000 / ext.width() * MAP_W
+    seg_mm = bar_mm / 5
+    row_h = 2.2
+    sb_x, sb_y = 10, TXT_Y + 69 + dy
+    cells = [(i * seg_mm / 5, seg_mm / 5, i) for i in range(5)]                # first segment, fine cells
+    cells += [(seg_mm * s, seg_mm, 4 + s) for s in range(1, 5)]                # then four coarse segments
+    for x_off, w, k in cells:
+        for row in (0, 1):
+            black = (k + row) % 2 == 0
+            shp = QgsLayoutItemShape(layout)
+            shp.setShapeType(QgsLayoutItemShape.Rectangle)
+            shp.attemptMove(QgsLayoutPoint(sb_x + x_off, sb_y + row * row_h, QgsUnitTypes.LayoutMillimeters))
+            shp.attemptResize(QgsLayoutSize(w, row_h, QgsUnitTypes.LayoutMillimeters))
+            shp.setSymbol(QgsFillSymbol.createSimple({
+                "color": "0,0,0,255" if black else "255,255,255,255",
+                "outline_color": "0,0,0,255", "outline_width": "0.2"}))
+            layout.addLayoutItem(shp)
+    for i in range(6):
+        add_label(f"{bar_km / 5 * i:g}", sb_x + i * seg_mm - 8, sb_y - 5.5, 16, 5, size=8,
+                  align=Qt.AlignmentFlag.AlignHCenter)
+    add_label("km", sb_x + bar_mm / 2 - 8, sb_y + 2 * row_h + 0.5, 16, 5, size=8,
+              align=Qt.AlignmentFlag.AlignHCenter)
+
+    # north arrow: QGIS's own SVG, beside the legend swatches; the map is not rotated, so up is grid north
+    north_svg = next((os.path.join(p, "arrows", "NorthArrow_02.svg") for p in QgsApplication.svgPaths()
+                      if os.path.exists(os.path.join(p, "arrows", "NorthArrow_02.svg"))), None)
+    if north_svg:
+        na = QgsLayoutItemPicture(layout)
+        na.setPicturePath(north_svg)
+        na.attemptMove(QgsLayoutPoint(COL2_X + 32.4, TXT_Y + 19.2, QgsUnitTypes.LayoutMillimeters))
+        na.attemptResize(QgsLayoutSize(15.6, 15.6, QgsUnitTypes.LayoutMillimeters))
+        layout.addLayoutItem(na)
+        add_label("N", COL2_X + 27.5, TXT_Y + 16, 20, 6, size=11, bold=True, align=Qt.AlignmentFlag.AlignHCenter)
+    else:
+        add_label("Grid North ↑", COL2_X + 27.5, TXT_Y + 14, 20, 8, size=10, bold=True)
 
     add_label("A - draft", 10, PAGE_H - 10, 40, 6, size=9, color=QColor(150, 150, 150))
     add_label("Pilot sheet | TH-LDP Committee", PAGE_W - 70, PAGE_H - 10, 60, 6, size=9,
