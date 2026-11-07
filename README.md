@@ -12,13 +12,12 @@ are marked "A - draft" until the TH-LDP committee approves them.
 
 ## Download
 
-**All 90 sheets at once (337 MB zip):**
+**All 90 sheets at once (384 MB zip):**
 [Releases](https://github.com/pbroboto/th-ldp-zone-sheets/releases/latest) →
 `th-ldp-zone-sheets-all.zip`.
 
 Or one zone at a time. The sheets are in [`output/`](output/) as PDF (A4,
-portrait), named `<Zone>_TH-LDP.pdf`. *The draft files online now were made on
-Letter paper; the A4 versions follow once the committee has decided.*
+portrait), named `<Zone>_TH-LDP.pdf`.
 
 - [Amnat Charoen](output/Amnat_Charoen_TH-LDP.pdf)
 - [Ang Thong](output/Ang_Thong_TH-LDP.pdf)
